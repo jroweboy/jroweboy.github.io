@@ -275,4 +275,4 @@ And all this time we've been ignoring the warning message about main not being a
 
 I'm guessing all that will happen when my coworker turns in an assignment looking like this is they will take off points for bad coding style and say nothing else about it. 
 
-![Zoidberg: Warning: `main` is usually a function. Why not an int array?](http://memedad.com/memes/428595.jpg)
+![Zoidberg: Warning: `main` is usually a function. Why not an int array?](https://memedad.com/memes/428595.jpg)
