@@ -1,0 +1,12 @@
+# Site settings
+title: Dev Blog for things that I find cool
+email: jroweboy@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    A blog dedicated to documenting things that I find interesting and things that I'm working on
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jroweboy.github.io" # the base hostname & protocol for your site
+twitter_username: b0b_d0e
+github_username:  jroweboy
+
+# Build settings
+markdown: kramdown

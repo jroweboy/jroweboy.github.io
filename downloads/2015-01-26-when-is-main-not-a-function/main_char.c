@@ -1,0 +1,1 @@
+char main[] = "Hello world!";
