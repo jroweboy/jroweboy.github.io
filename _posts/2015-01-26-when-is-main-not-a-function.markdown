@@ -7,6 +7,8 @@ comments: true
 ---
 It began when my coworker, despite already knowing how to program, was forced to take the intro level Computer Science course at my university. We joked with him about how he needs to make a program that works, but the grading TAs wouldn't be able to figure out *how* it works. So that is the requirement, to make a functioning program that completes an assignment while obfuscating it such that the graders think that it shouldn't work. With this in mind, I started to think through the arsenal of tricks in C that I've seen used before and one thing in particular stood out. The idea for this trick I will explain how to accomplish came from a blog with the name [main is usually a function](http://mainisusuallyafunction.blogspot.com/) which got me thinking about when would main *not* be a function? Let's find out then!
 
+(If you want to download any of the files, [you can download a zip of all the files I wrote here](/downloads/2015-01-26-when-is-main-not-a-function/sources.zip) Remember that I wrote them on 64bit Linux and you'll need to adjust them to work on other platforms I'm guessing)
+
 My problem solving process is typically the same thing I imagine most programmers do. Step 1: Google search about the problem. Step 2: Click every link on the first page that seems relevent. If not solved, try a different query and repeat. Thankfully, the answer to this question came on the very first search on [this Stackoverflow answer](http://stackoverflow.com/a/2252429/745719). Apparently in 1984, a strange program won the IOCCC where main was declared as a `short main[] = {...}` and somehow this did stuff and printed to the screen! Too bad it was written for a whole different architecture and compiler so there is really no easy way for me to find out what it did, but judging from the fact that it is just a bunch of numbers, I can surmise that the numbers there are just the compiled binary of some short function and the linker when looking for the main function just throws this in the place of it.
 
 With our hypothesis in place, that the code for the program is just the compiled assembly of main function represented as an array, lets see if we can replicate this by making a small program and seeing if we can do that.
@@ -273,4 +275,4 @@ And all this time we've been ignoring the warning message about main not being a
 
 I'm guessing all that will happen when my coworker turns in an assignment looking like this is they will take off points for bad coding style and say nothing else about it. 
 
-If you want to download any of the files mentioned here, [you can download a zip of all the files I wrote here](/downloads/2015-01-26-when-is-main-not-a-function/sources.zip)
+![Zoidberg: Warning: `main` is usually a function. Why not an int array?](http://memedad.com/memes/428595.jpg)
