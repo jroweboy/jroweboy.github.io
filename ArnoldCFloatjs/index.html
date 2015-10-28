@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArnoldC.js</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h1>ArnoldC.js</h1>
+      <p class="lead">A javascript port of the programming language based on the one liners of Arnold Schwarzenegger</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="https://github.com/jroweboy/ArnoldC.js" role="button">More on Github</a>
+        <a class="btn btn-default btn-lg" href="https://raw.githubusercontent.com/jroweboy/ArnoldC.js/master/dist/arnoldc.js" role="button">Download</a>
+      </p>
+    </div>
+
+    <hr />
+
+    <section>
+      <h2>Try It</h2>
+      <ul class="nav nav-tabs" id="ace-editor-tabs">
+        <li class="tab-hellofloat active" role="presentation"><a href="#">Hello Floats</a></li>
+        <li class="tab-factorial" role="presentation"><a href="#">Factorial</a></li>
+        <li class="tab-fibonacci" role="presentation"><a href="#">Fibonacci</a></li>
+      </ul>
+
+      <div class="row">
+        <div class="col-md-8 col-editor">
+          <div id="ace-editor"></div>
+        </div>
+        <div class="col-md-4 col-output">
+            <div class="btn-group">
+              <button class="btn btn-primary action-arnoldc-execute" accesskey="e">DO IT NOW</button>
+            </div>
+            <div id="arnoldc-output-section" style="display:none">
+              <h3>Output</h3>
+              <pre></pre>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p class="text-muted">Ported from <a href="http://lhartikk.github.io/ArnoldC/">the real ArnoldC</a></p>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ace.js"></script>
+    <script src="js/arnoldc.js"></script>
+    <script src="js/site.min.js"></script>
+    </div>
+  </body>
+</html>
